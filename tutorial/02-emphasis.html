@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Tutoriel Markdown - Emphase</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="../css/normalize-skeleton.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+    <link rel="stylesheet" href="../css/points.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+
+</head>
+
+<body>
+
+    <div id="fullpage">
+
+        <div id="footer">
+            <div class="dotstyle dotstyle-fillup">
+                <ul>
+                    <li class="current"><a href="javascript:goToSlide(0);">1</a></li>
+                    <li><a href="javascript:goToSlide(1);">2</a></li>
+                    <li><a href="javascript:goToSlide(2);">3</a></li>
+                    <li><a href="javascript:goToSlide(3);">4</a></li>
+                    <li><a href="javascript:goToSlide(4);">5</a></li>
+                </ul>
+            </div>
+        </div>
+       
+        <div class="section emphasis">
+                        
+            <div class="slide 0 active">
+                <div class="container">
+                    <div class="row noselect">
+                        <div class="twelve columns">
+                            <div class="lesson-number">02</div>
+                        </div>
+                    </div>
+                    <div class="row rowspacer">
+                        <div class="twelve columns">&nbsp;</div>
+                    </div>
+                    <div class="row">
+                        <div class="four columns">
+                            <h2>Emphase</h2>
+                            <p>Pour créer des caractères gras ou italiques, enveloppez-les avec des astérisques <code>*</code> ou des tirets bas <code>_</code>.</p>
+                            <p>Pour éviter de créer du gras ou de l'italique, placez une barre oblique inverse devant <code>\*</code> ou <code>\_</code>.</p>
+                            <p class="try-it">
+                                <button class="noselect button-primary button-next">Exercices</button>
+                            </p>
+                        </div>
+                        <div class="eight columns">
+                            <div class="cd-product cd-container">
+                                <div class="cd-product-wrapper">
+                                    <div class="cd-product-description" style="font-size:40px">*Italique*<br/>
+                                    **Gras**
+                                    </div>
+                                    <ul>
+                                        
+                                        <li class="cd-single-point" style="top: -18px;left:-2px;">
+                                            <a class="cd-img-replace" href="#">Plus</a>
+                                            <div class="cd-more-info cd-left">
+                                                <p>Un seul <code>*</code> ou <code>_</code> de part et d'autre du texte le rendra en italique.</p>
+                                                <a href="#" class="cd-close-info cd-img-replace">Fermer</a>
+                                            </div>
+                                        </li>
+                                        
+                                        <li class="cd-single-point" style="top: -18px;left: 190px;">
+                                            <a class="cd-img-replace" href="#">Plus</a>
+                                            <div class="cd-more-info cd-top">
+                                                <p>Le même caractère doit être utilisé pour ouvrir et fermer l'accent.</p>
+                                                <a href="#" class="cd-close-info cd-img-replace">Fermer</a>
+                                            </div>
+                                        </li>
+
+                                        <li class="cd-single-point" style="top: 92px;left: 10px;">
+                                            <a class="cd-img-replace" href="#">Plus</a>
+                                            <div class="cd-more-info cd-left">
+                                                <p>Deux <code>**</code> ou <code>__</code> de part et d'autre du texte le rendront en gras.</p>
+                                                <a href="#" class="cd-close-info cd-img-replace">Fermer</a>
+                                            </div>
+                                        </li>
+ 
+                                        <li class="cd-single-point" style="top: 92px;left: 155px;">
+                                            <a class="cd-img-replace" href="#">Plus</a>
+                                            <div class="cd-more-info cd-top">
+                                                <p>Il ne doit pas y avoir d'espace entre les deux <code>*</code> ou <code>_</code>.</p>
+                                                <a href="#" class="cd-close-info cd-img-replace">Fermer</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="slide 1">
+                <div class="container">
+                    <div class="row exercise-instructions">
+                        <div class="twelve columns">
+                            <p>Mettez les mots “American Oxygen” en gras :</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="six columns">
+                            <textarea id="editor_1-1" class="editor">The music video for Rihanna’s song American Oxygen depicts various moments from American history, including the inauguration of Barack Obama.</textarea>
+                        </div>
+                        <div class="six columns">
+                            <div id="render_pad_1-1" class="render-pad"></div>
+                            <div id="html_pad_1-1" class="html-pad"></div>
+                        </div>
+                    </div>
+                    <div class="row rowspacer">
+                        <div class="six columns">
+                            &nbsp;
+                        </div>
+                        <div class="six columns generated-check">
+                            <label class="noselect"><input id="ck_show_html_1-1" type="checkbox" class="show-html" /> Montrer le résultat en HTML</label>
+                        </div>                       
+                    </div>
+                    <div class="row">
+                        <div class="six columns">
+                            <p>
+                                <button id="btn_answer_1-1" class="noselect button button-answer">Indice</button>
+                                <button id="btn_reset_1-1" class="noselect button button-reset">Remettre à zéro</button>
+                            </p>
+                            <p>
+                                <button class="noselect button-primary button-next u-full-width">Exercice suivant</button>
+                                <button class="noselect button-primary button-previous u-full-width">Emphase</button>
+                            </p>
+                        </div>
+                        <div class="six columns">
+                            <!-- empty -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide 2">
+                <div class="container">
+                    <div class="row exercise-instructions">
+                        <div class="twelve columns">
+                            <p>Mettez le mot “six” en italique :</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="six columns">
+                            <textarea id="editor_1-2" class="editor">Why, sometimes I’ve believed as many as six impossible things before breakfast.</textarea>
+                        </div>
+                        <div class="six columns">
+                            <div id="render_pad_1-2" class="render-pad"></div>
+                            <div id="html_pad_1-2" class="html-pad"></div>
+                        </div>
+                    </div>
+                    <div class="row rowspacer">
+                        <div class="six columns">
+                            &nbsp;
+                        </div>
+                        <div class="six columns generated-check">
+                            <label class="noselect"><input id="ck_show_html_1-2" type="checkbox" class="show-html" /> Montrer le résultat en HTML</label>
+                        </div>                       
+                    </div>                    
+                    <div class="row">
+                        <div class="six columns">
+                            <p>                                
+                                <button id="btn_answer_1-2" class="noselect button button-answer">Indice</button>
+                                <button id="btn_reset_1-2" class="noselect button button-reset">Remettre à zéro</button>
+                            </p>
+                            <p>
+                                <button class="noselect button-primary button-next u-full-width">Exercice suivant</button>
+                                <button class="noselect button-primary button-previous u-full-width">Exercice précédent</button>
+                            </p>
+                        </div>
+                        <div class="six columns">
+                            <!-- empty -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide 3">
+                <div class="container">
+                    <div class="row exercise-instructions">
+                        <div class="twelve columns">
+                            <p>Mettez la phrase entière en gras et le mot “must” en italique :</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="six columns">
+                            <textarea id="editor_1-3" class="editor">Everyone must attend the meeting at 5 o’clock today.</textarea>
+                        </div>
+                        <div class="six columns">
+                            <div id="render_pad_1-3" class="render-pad"></div>
+                            <div id="html_pad_1-3" class="html-pad"></div>
+                        </div>
+                    </div>
+                    <div class="row rowspacer">
+                        <div class="six columns">
+                            &nbsp;
+                        </div>
+                        <div class="six columns generated-check">
+                            <label class="noselect"><input id="ck_show_html_1-3" type="checkbox" class="show-html" /> Montrer le résultat en HTML</label>
+                        </div>                       
+                    </div>
+                    <div class="row">
+                        <div class="six columns">
+                            <p>
+                                <button id="btn_answer_1-3" class="noselect button button-answer">Indice</button>
+                                <button id="btn_reset_1-3" class="noselect button button-reset">Remettre à zéro</button>
+                            </p>
+                            <p>
+                                <button class="noselect button-primary button-next u-full-width">Exercice suivant</button>
+                                <button class="noselect button-primary button-previous u-full-width">Exercice précédent</button>
+                            </p>
+                        </div>
+                        <div class="six columns">
+                            <!-- empty -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide 4">
+                <div class="container">
+                    <div class="row exercise-instructions">
+                        <div class="twelve columns">
+                            <p>Changer la dernière ligne de manière à ce que le caractère <code>*</code> soit visible :</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="six columns">
+                            <textarea id="editor_1-4" class="editor">I am totally awesome.*
+
+* for certain very small values of awesome</textarea>
+                        </div>
+                        <div class="six columns">
+                            <div id="render_pad_1-4" class="render-pad"></div>
+                            <div id="html_pad_1-4" class="html-pad"></div>
+                        </div>
+                    </div>
+                    <div class="row rowspacer">
+                        <div class="six columns">
+                            &nbsp;
+                        </div>
+                        <div class="six columns generated-check">
+                            <label class="noselect"><input id="ck_show_html_1-4" type="checkbox" class="show-html" /> Montrer le résultat en HTML</label>
+                        </div>                       
+                    </div>
+                    <div class="row">
+                        <div class="six columns">
+                            <p>
+                                <button id="btn_answer_1-4" class="noselect button button-answer">Indice</button>
+                                <button id="btn_reset_1-4" class="noselect button button-reset">Remettre à zéro</button>
+                            </p>
+                            <p>
+                                <a href="03-paragraphs.html" id="btn_answer_1-4" class="noselect button button-primary button-next-lesson u-full-width">Paragraphes</a>
+                                <button class="noselect button-primary button-previous u-full-width">Exercice précédent</button>
+                            </p>
+                        </div>
+                        <div class="six columns">
+                            <!-- empty -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/8.3.1/markdown-it.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nanobar/0.4.2/nanobar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dot/1.1.2/doT.min.js"></script>
+    
+    <script src="../js/exercises.js"></script>
+    <script src="../js/setup.js"></script>
+    <script src="../js/menu.js"></script>
+
+    <script type="text/javascript">
+        var CURRENT_SECTION = 1;
+    </script>
+</body>
+
+</html>

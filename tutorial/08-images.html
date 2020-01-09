@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Tutoriel Markdown - Images</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="../css/normalize-skeleton.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+    <link rel="stylesheet" href="../css/points.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+
+</head>
+
+<body>
+
+    <div id="fullpage">
+
+        <div id="footer">
+            <div class="dotstyle dotstyle-fillup">
+                <ul>
+                    <li class="current"><a href="javascript:goToSlide(0);">1</a></li>
+                    <li><a href="javascript:goToSlide(1);">2</a></li>
+                    <li><a href="javascript:goToSlide(2);">3</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section images">
+
+            <div class="slide 0 active">
+                <div class="container">
+                    <div class="row noselect">
+                        <div class="twelve columns">
+                            <div class="lesson-number">06</div>
+                        </div>
+                    </div>
+                    <div class="row rowspacer">
+                        <div class="twelve columns">&nbsp;</div>
+                    </div>
+                    <div class="row">
+                        <div class="four columns">
+                            <h2>Images</h2>
+                            <p>Les images sont presque identiques aux liens, à la différence qu'une image commence par un point d'exclamation <code>!</code>.</p>
+                            <p class="try-it">
+                                <button class="noselect button-primary button-next">Exercices</button>
+                            </p>
+                        </div>
+                        <div class="eight columns">
+                            <div class="cd-product cd-container">
+                                <div class="cd-product-wrapper">
+                                    <div class="cd-product-description" style="font-size:22px;">
+                                        ![alt](chat.png)<br/>
+                                        <br/>
+                                        ![alt][id]<br/>
+                                        &#8942;<br/>
+                                        [id]: chien.jpg "titre"<br/>
+                                    </div>
+                                    <ul>
+                                        <li class="cd-single-point" style="top: -24px;left:31px;">
+                                            <a class="cd-img-replace" href="#">Plus</a>
+                                            <div class="cd-more-info cd-left">
+                                                <p>Le texte alternatif (alt) s'affiche lorsque l'image ne peut pas être affichée ou pour les malvoyants.</p>
+                                                <p>Les crochets <code>[]</code> sont obligatoires même s'ils ne contiennent pas de texte alternatif.</p>
+                                                <a href="#" class="cd-close-info cd-img-replace">Fermer</a>
+                                            </div>
+                                        </li>
+
+                                        <li class="cd-single-point" style="top: -24px;left:125px;">
+                                            <a class="cd-img-replace" href="#">Plus</a>
+                                            <div class="cd-more-info cd-left">
+                                                <p>Vous pouvez utiliser des URL complètes, telles que<br/><br/> <code>http://a.com/dog.jpg</code></p>
+                                                <a href="#" class="cd-close-info cd-img-replace">Fermer</a>
+                                            </div>
+                                        </li>
+
+                                        <li class="cd-single-point" style="top:27px;left:65px;">
+                                            <a class="cd-img-replace" href="#">Plus</a>
+                                            <div class="cd-more-info cd-left">
+                                                <p>Il ne doit pas y avoir d'espace entre le crochet et le texte.</p>
+                                                <a href="#" class="cd-close-info cd-img-replace">Fermer</a>
+                                            </div>
+                                        </li>
+
+                                        <li class="cd-single-point" style="top: 138px;left:12px;">
+                                            <a class="cd-img-replace" href="#">Plus</a>
+                                            <div class="cd-more-info cd-left">
+                                                <p>Comme pour les liens, les identifiants peuvent être constitués de lettres, de chiffres, d'espaces et de ponctuation. Ils ne sont pas sensibles à la casse.</p>
+                                                <p>La définition du lien vers l'image peut être placée n'importe où après une ligne vide, mais on la place généralement à la fin du texte.</p>
+                                                <a href="#" class="cd-close-info cd-img-replace">Fermer</a>
+                                            </div>
+                                        </li>
+
+                                        <li class="cd-single-point" style="top: 138px;left:220px;">
+                                            <a class="cd-img-replace" href="#">Plus</a>
+                                            <div class="cd-more-info cd-top">
+                                                <p>Le titre de l'image est facultatif.</p>
+                                                <a href="#" class="cd-close-info cd-img-replace">Fermer</a>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide 1">
+                <div class="container">
+                    <div class="row exercise-instructions">
+                        <div class="twelve columns exercise-instructions">
+                            <p>Faites apparaître cette image - pas besoin de texte alternatif ou de titre, laissez-les vides :</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="six columns">
+                            <textarea id="editor_7-1" class="editor">https://commonmark.org/help/images/favicon.png</textarea>
+                        </div>
+                        <div class="six columns">
+                            <div id="render_pad_7-1" class="render-pad"></div>
+                            <div id="html_pad_7-1" class="html-pad"></div>
+                        </div>
+                    </div>
+                    <div class="row rowspacer">
+                        <div class="six columns">
+                            &nbsp;
+                        </div>
+                        <div class="six columns generated-check">
+                            <label class="noselect"><input id="ck_show_html_7-1" type="checkbox" class="show-html" /> Montrer le résultat en HTML</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="six columns">
+                            <p>
+                                <button id="btn_answer_7-1" class="noselect button button-answer">Indice</button>
+                                <button id="btn_reset_7-1" class="noselect button button-reset">Remettre à zéro</button>
+                            </p>
+                            <p>
+                                <button class="noselect button-primary button-next u-full-width">Exercice suivant</button>
+                                <button class="noselect button-primary button-previous u-full-width">Images</button>
+                            </p>
+                        </div>
+                        <div class="six columns">
+                            <!-- empty -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide 2">
+                <div class="container">
+                    <div class="row exercise-instructions">
+                        <div class="twelve columns">
+                            <p>Ajoutez le texte <b>“Logo”</b> et le titre <b>“Creative Commons licensed”</b> à cette image :</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="six columns">
+                            <textarea id="editor_7-2" class="editor">![][1]
+
+[1]: https://commonmark.org/help/images/favicon.png</textarea>
+                        </div>
+                        <div class="six columns">
+                            <div id="render_pad_7-2" class="render-pad"></div>
+                            <div id="html_pad_7-2" class="html-pad"></div>
+                        </div>
+                    </div>
+                    <div class="row rowspacer">
+                        <div class="six columns">
+                            &nbsp;
+                        </div>                            
+                        <div class="six columns generated-check">
+                            <label class="noselect"><input id="ck_show_html_7-2" type="checkbox" class="show-html" /> Montrer le résultat en HTML</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="six columns">
+                            <p>
+                                <button id="btn_answer_7-2" class="noselect button button-answer">Indice</button>
+                                <button id="btn_reset_7-2" class="noselect button button-reset">Remettre à zéro</button>
+                            </p>                            
+                            <p>
+                                <a href="09-code.html" id="btn_answer_7-2" class="noselect button button-primary button-next-lesson u-full-width">Code</a>
+                                <button class="noselect button-primary button-previous u-full-width">Exercice précédent</button>
+                            </p>
+                        </div>
+                        <div class="six columns">
+                            <!-- empty -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/8.3.1/markdown-it.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nanobar/0.4.2/nanobar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dot/1.1.2/doT.min.js"></script>
+    
+    <script src="../js/exercises.js"></script>
+    <script src="../js/setup.js"></script>
+    <script src="../js/menu.js"></script>
+
+    <script type="text/javascript">
+        var CURRENT_SECTION = 7;
+    </script>
+</body>
+
+</html>

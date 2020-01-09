@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Tutoriel Markdown - Référence</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize-skeleton.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+
+<body>
+
+    <div class="container">
+        
+        <div class="twelve columns">
+            <p><b>Markdown</b> permet de structurer simplement et rapidement du texte pour un rendu efficace sur n'importe quel écran. C'est un langage simple qui se concentre sur l'essentiel, en utilisant des symboles que vous connaissez déjà.</p>
+            <p>Ce mini-site est une traduction française des pages d'aide <a href="https://spec.commonmark.org">du site de CommonMark</a>, proposée par Arthur Perret (janvier 2020).</p>
+        </div>
+
+        <div class="twelve columns center">
+            <a class="button button-primary" href="tutorial/" style="padding: 0 15px">Tutoriel</a>
+        </div>
+
+        <div class="twelve columns center">
+
+            <table class="markdown-reference">
+                <thead>
+                    <tr>
+                        <th>Écrivez</th>
+                        <th class="second-example">ou bien</th>
+                        <th>&hellip; pour obtenir</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>                        
+                        <td class="preformatted">*Italique*</td>
+                        <td class="preformatted second-example">_Italique_</td>
+                        <td><em>Italique</em></td>
+                    </tr>
+                    <tr>                        
+                        <td class="preformatted">**Gras**</td>
+                        <td class="preformatted second-example">__Gras__</td>
+                        <td><strong>Gras</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="preformatted">
+                            # Titre 1
+                        </td>
+                        <td class="preformatted second-example">
+                            Titre 1<br/>
+                            =========
+                        </td>
+                        <td>
+                            <h1 class="smaller-h1">Titre 1</h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="preformatted">
+                            ## Titre 2
+                        </td>
+                        <td class="preformatted second-example">
+                            Titre 2<br/>
+                            ---------
+                        </td>
+                        <td>
+                            <h2 class="smaller-h2">Titre 2</h2>
+                        </td>
+                    </tr>
+                    <tr>                        
+                        <td class="preformatted">
+                            [Lien](http://a.com)
+                        </td>
+                        <td class="preformatted second-example">
+                            [Lien][1]<br/>
+                            &#8942;<br/>
+                            [1]: http://b.org
+                        </td>
+                        <td><a href="https://commonmark.org/">Lien</a></td>
+                    </tr>
+                    <tr>
+                        <td class="preformatted">
+                            ![Image](http://url/a.png)
+                        </td>
+                        <td class="preformatted second-example">
+                            ![Image][1]<br/>
+                            &#8942;<br/>
+                            [1]: http://url/b.jpg
+                        </td>
+                        <td>
+                            <img src="images/favicon.png" width="36" height="36" alt="Markdown"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="preformatted">
+                            &gt; Bloc de citation
+                        </td>
+                        <td class="preformatted second-example">
+                            &nbsp;
+                        </td>
+                        <td>
+                            <blockquote>Bloc de citation</blockquote>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="preformatted">
+                            <p>
+                                * Liste<br/>
+                                * Liste<br/>
+                                * Liste
+                            </p>
+                        </td>
+                        <td class="preformatted second-example">
+                            <p>
+                                - Liste<br/>
+                                - Liste<br/>
+                                - Liste<br/>
+                            </p>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Liste</li>
+                                <li>Liste</li>
+                                <li>Liste</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="preformatted">
+                            <p>
+                                1. Un<br/>
+                                2. Deux<br/>
+                                3. Trois
+                            </p>
+                        </td>
+                        <td class="preformatted second-example">
+                            <p>
+                                1) Un<br/>
+                                2) Deux<br/>
+                                3) Trois
+                            </p>
+                        </td>
+                        <td>
+                            <ol>
+                                <li>Un</li>
+                                <li>Deux</li>
+                                <li>Trois</li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="preformatted">
+                            Rupture thématique (hr)<br/>
+                            <br/>
+                            ---
+                        </td>
+                        <td class="preformatted second-example">
+                            Rupture thématique (hr)<br/>
+                            <br/>
+                            ***
+                        </td>
+                        <td>
+                            Rupture thématique (hr)
+                            <hr class="custom-hr" />
+                        </td>
+                    </tr>
+                    <tr>                        
+                        <td class="preformatted">
+                            `Code en ligne` avec des backticks
+                            </td>
+                        <td class="preformatted second-example">
+                            &nbsp;
+                        </td>
+                        <td>
+                            <code class="preformatted">Code en ligne</code> avec des backticks
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="preformatted">
+                            ```<br/>
+                            # bloc de code<br/>
+                            print '3 backticks ou'<br/> 
+                            print 'retrait de 4 espaces'<br/>                            
+                            ```
+                        </td>
+                        <td class="preformatted second-example">
+                            <span class="spaces">····</span># bloc de code<br/> 
+                            <span class="spaces">····</span>print '3 backticks ou'<br/>
+                            <span class="spaces">····</span>print 'retrait de 4 espaces'
+                        </td>
+                        <td>
+                            <div class="code-block">
+                                # bloc de code
+                                <br/> print '3 backticks ou'
+                                <br/> print 'retrait de 4 espaces'
+                            </div>
+                        </td>
+                    </tr>                    
+                </tbody>
+            </table>
+        </div>
+                
+        <div class="twelve columns" style="margin-top: 2%">
+            <p><b>Un peu d'exercice ?</b></p>
+            <p>Testez <b><a href="tutorial/">le tutoriel interactif</a></b>, ou <a href="https://spec.commonmark.org/dingus/">l'implémentation de référence CommonMark</a>.</p>
+        </div>
+
+        <div class="twelve columns">
+            <p><b>Plus d'infos ?</b></p>
+            <p>Visitez <a href="https://spec.commonmark.org">la spécification officielle CommonMark</a>, ou <a href="https://talk.commonmark.org">discutez de CommonMark avec la communauté</a>.</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
